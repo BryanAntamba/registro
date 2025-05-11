@@ -1,0 +1,316 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal del texto */
+    background-image: url('img/ciudadfuturista.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen al fondo, no se desplaza */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina márgenes por defecto del navegador */
+    margin: 20px; /* Sobrescribe lo anterior con un margen de 20px */
+    min-height: 150vh; /* Altura mínima del 150% del alto de la ventana */
+    color: white; /* Color del texto en blanco para mejor legibilidad */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+#logotipo {
+    width: 270px; /* Ancho del logotipo */
+    height: 250px; /* Altura del logotipo */
+    display: block; /* Convierte a bloque para permitir márgenes automáticos */
+    margin: 0 auto; /* Centra horizontalmente el logotipo */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica animación de aparición */
+}
+
+/* Animación para hacer que el logotipo aparezca */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Empieza invisible */
+    }
+    100% {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+#titulo {
+    text-align: center; /* Centra el texto */
+    font-size: 2em; /* Tamaño del texto */
+    margin-top: 20px; /* Espacio superior */
+    animation: aparecerGlow 3s ease-in-out forwards; /* Aplica animación */
+}
+
+/* Animación con efecto de resplandor */
+@keyframes aparecerGlow {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        text-shadow: none; /* Sin sombra */
+    }
+    40% {
+        opacity: 1; /* Aparece */
+        text-shadow: none; /* Aún sin sombra */
+    }
+    70% {
+        text-shadow: 0 0 30px white; /* Efecto de resplandor blanco */
+    }
+    100% {
+        opacity: 1; /* Visible */
+        text-shadow: none; /* Vuelve a estado sin sombra */
+    }
+}
+
+.contenedor-registro {
+    background-color: rgba(50, 50, 50, 0.3); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(10px); /* Difumina el fondo */
+    -webkit-backdrop-filter: blur(55px); /* Soporte para Safari */
+    border: 1px solid white; /* Borde blanco */
+    height: 1000px; /* Altura fija */
+    width: 750px; /* Ancho fijo */
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Subtítulos con posiciones específicas */
+.subtitulos1 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 35px;
+    margin-left: -400px;
+}
+.subtitulos2 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -380px;
+}
+.subtitulos3 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -415px;
+}
+.subtitulos4 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 30px;
+    margin-left: -420px;
+}
+.subtitulos5 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -369px;
+}
+.subtitulos6 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -410px;
+}
+.subtitulos7 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -393px;
+}
+.subtitulos8 {
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+    margin-left: -395px;
+}
+
+.bloques1 {
+    display: flex; /* Flexbox para distribuir horizontalmente */
+    gap: 50px; /* Espacio entre elementos */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: center; /* Texto centrado */
+    margin-left: 170px; /* Desplazamiento izquierdo */
+    margin-top: 25px; /* Espacio superior */
+}
+
+.bloques2 {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 170px;
+    margin-top: 25px;
+}
+
+.insertar {
+    margin: 0 auto;
+    display: block;
+    width: 500px; /* Ancho del input */
+    height: 30px; /* Altura del input */
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border: 2px solid white; /* Borde blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos al hacer hover o focus */
+    color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el mouse por inputs */
+.insertar:hover {
+    transform: scale(1.05); /* Aumenta el tamaño */
+    box-shadow: 0 0 15px white; /* Aplica sombra blanca */
+}
+
+/* Efecto al hacer clic en inputs */
+.insertar:focus {
+    transform: scale(1); /* Regresa al tamaño original */
+}
+
+.opciones {
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover sobre select */
+.opciones:hover {
+    background-color: #373333; /* Fondo más oscuro */
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0 0 15px white; /* Sombra blanca */
+}
+
+.opciones2 {
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    height: 110px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opciones2:hover {
+    background-color: #373333;
+    color: #ffffff;
+    box-shadow: 0 0 15px white;
+}
+
+.bloques3 {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    margin-left: 173px;
+    margin-top: 25px;
+    border: 1px solid white;
+}
+
+.botonEnvio {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid white;
+    color: black; /* Texto negro */
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-left: 120px;
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cource: pointer; /* (Error tipográfico, debería ser cursor) */
+    font-size: 1em;
+}
+
+/* Hover en botón de envío */
+.botonEnvio:hover {
+    transform: scale(1.05); /* Zoom */
+    background-color: #71cf68; /* Fondo verde */
+    box-shadow: 0 0 15px white;
+}
+
+/* Focus en .insertar (repetido) */
+.insertar:focus {
+    transform: scale(1);
+}
+
+/* Media Queries */
+
+/* Móviles pequeños */
+@media (max-width: 320px) {
+    :root {
+        --form-width: 95%;
+        --input-width: 90%;
+    }
+
+    body {
+        padding: 10px; /* Espaciado interno para móviles */
+    }
+
+    [class^="subtitulos"] {
+        font-size: 1em; /* Reduce tamaño del texto */
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --form-width: 80%; /* Ajusta ancho del formulario */
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1440px) {
+    :root {
+        --max-form-width: 900px;
+    }
+
+    .contenedor-registro {
+        padding: 40px; /* Aumenta el padding del contenedor */
+    }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 2560px) {
+    :root {
+        --max-form-width: 1200px;
+    }
+
+    body {
+        font-size: 1.2em; /* Aumenta tamaño del texto */
+    }
+}
+
+/* Efectos combinados de hover */
+.insertar:hover,
+.opciones:hover,
+.opciones2:hover,
+.botonEnvio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px white;
+}
+
+/* Modo horizontal en pantallas pequeñas */
+@media (max-height: 500px) and (orientation: landscape) {
+    .contenedor-registro {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #logotipo {
+        width: 150px; /* Reduce tamaño del logo */
+    }
+}
