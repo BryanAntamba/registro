@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif; /* Fuente principal del texto */
@@ -6,9 +7,7 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-attachment: fixed; /* Fija la imagen al fondo, no se desplaza */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    margin: 0; /* Elimina márgenes por defecto del navegador */
-    margin: 20px; /* Sobrescribe lo anterior con un margen de 20px */
-    min-height: 150vh; /* Altura mínima del 150% del alto de la ventana */
+    min-height: 300vh; /* Altura mínima del alto de la ventana */
     color: white; /* Color del texto en blanco para mejor legibilidad */
     box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
@@ -62,7 +61,7 @@ body {
     backdrop-filter: blur(10px); /* Difumina el fondo */
     -webkit-backdrop-filter: blur(55px); /* Soporte para Safari */
     border: 1px solid white; /* Borde blanco */
-    height: 1000px; /* Altura fija */
+    height: 1200px; /* Altura fija */
     width: 750px; /* Ancho fijo */
     margin: 0 auto; /* Centrado horizontal */
     border-radius: 20px; /* Bordes redondeados */
@@ -246,9 +245,7 @@ body {
 .insertar:focus {
     transform: scale(1);
 }
-
 /* Media Queries */
-
 /* Móviles pequeños */
 @media (max-width: 320px) {
     :root {

@@ -17,26 +17,36 @@
 <%
     if (errores != null && errores.size() > 0) {  // Si existen errores, se muestran en una lista
 %>
-<ul>
-    <% for (String error: errores.values()) { %>  <%-- Itera sobre los valores del mapa de errores --%>
-    <li><%= error %></li>  <%-- Muestra cada error en un elemento de lista --%>
+    <% for (String error: errores.values()) { %>  <%-- Itera sobre los valores del mapa de errores --%> <%-- Muestra cada error en un elemento de lista --%>
     <% } %>
-</ul>
 <% } %>
 
 <div>
-    <form class="contenedor-registro" action="/app_formulario/registro" method="post">  <%-- Formulario principal, envía datos a la ruta especificada por POST --%>
+    <form class="contenedor-registro" action="/registro/registro" method="post">  <%-- Formulario principal, envía datos a la ruta especificada por POST --%>
         <div >
             <label class="subtitulos1" for="username">Usuario:</label>  <%-- Etiqueta para el campo de nombre de usuario --%>
             <div>
                 <input class="insertar" type="text" name="username" id="username" placeholder="User...">  <%-- Campo de texto para el nombre de usuario --%>
             </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("username")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("username")+ "</div>");
+                    }
+                %>
+            </div>
         </div>
-
         <div>
             <label class="subtitulos2" for="password">Password:</label>  <%-- Etiqueta para la contraseña --%>
             <div>
                 <input class="insertar" type="password" name="password" id="password" placeholder="Password...">  <%-- Campo de entrada de tipo contraseña --%>
+            </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("password")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("password")+ "</div>");
+                    }
+                %>
             </div>
         </div>
 
@@ -45,8 +55,14 @@
             <div>
                 <input class="insertar" type="email" name="email" id="email" placeholder="Email...">  <%-- Campo de entrada para el correo electrónico --%>
             </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("email")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("email")+ "</div>");
+                    }
+                %>
+            </div>
         </div>
-
         <div>
             <label class="subtitulos4" for="pais">País:</label>  <%-- Etiqueta para la selección del país --%>
             <div>
@@ -61,6 +77,13 @@
                     <option value="VE">Venezuela</option>
                 </select>
             </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("pais")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("pais")+ "</div>");
+                    }
+                %>
+            </div>
         </div>
 
         <div>
@@ -74,6 +97,13 @@
                     <option value="C++">C++</option>
                     <option value="Angular">Angular</option>
                 </select>
+            </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("lenguajes")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("lenguajes")+ "</div>");
+                    }
+                %>
             </div>
         </div>
 
@@ -93,6 +123,13 @@
                     <label>Moderador</label>
                 </div>
             </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("roles")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("roles")+ "</div>");
+                    }
+                %>
+            </div>
         </div>
 
         <div>
@@ -111,12 +148,25 @@
                     <label>Ruso</label>
                 </div>
             </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("idioma")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("idioma")+ "</div>");
+                    }
+                %>
+            </div>
         </div>
-
         <div>
             <label class="subtitulos8" for="habilitar">Habilitar:</label>  <%-- Etiqueta para habilitar la cuenta --%>
             <div>
                 <input class="bloques3" type="checkbox" name="habilitar" id="habilitar" checked>  <%-- Checkbox marcado por defecto --%>
+            </div>
+            <div>
+                <%
+                    if(errores != null && errores.containsKey("habilitar")){
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("habilitar")+ "</div>");
+                    }
+                %>
             </div>
         </div>
 
