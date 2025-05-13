@@ -1,3 +1,7 @@
+/*Desarrollador: Bryan Antamba
+* Fecha: 12/05/2025
+* Descripcion: Desarrollo de clase Servlet, desarrollo de atributos de formulario, condicionales de errores
+* al no llenar los campos solicitados del index.jsp con su generacion respectiva*/
 package org.bryan.appformulario;  // Define el paquete al que pertenece la clase
 
 import jakarta.servlet.ServletException;  // Importa la clase para manejar excepciones de servlets
