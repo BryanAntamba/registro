@@ -1,5 +1,7 @@
 <%--
-    Comentario JSP: Información del archivo y metadatos de creación
+  Desarrollador: Bryan Antamba
+  Fecha: 12/05/2025
+  Descripcion: Información del archivo y metadatos de creación
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>  <%-- Define el tipo de contenido como HTML con codificación UTF-8 y lenguaje Java --%>
 <%@ page import="java.util.Map" %>  <%-- Importa la clase Map de java.util para usar mapas --%>
