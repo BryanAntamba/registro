@@ -33,7 +33,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("username")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("username")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("username")+ "</div>");
                     }
                 %>
             </div>
@@ -46,7 +46,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("password")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("password")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("password")+ "</div>");
                     }
                 %>
             </div>
@@ -60,7 +60,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("email")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("email")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("email")+ "</div>");
                     }
                 %>
             </div>
@@ -82,7 +82,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("pais")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("pais")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("pais")+ "</div>");
                     }
                 %>
             </div>
@@ -103,7 +103,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("lenguajes")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("lenguajes")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("lenguajes")+ "</div>");
                     }
                 %>
             </div>
@@ -128,7 +128,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("roles")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("roles")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("roles")+ "</div>");
                     }
                 %>
             </div>
@@ -153,7 +153,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("idioma")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("idioma")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("idioma")+ "</div>");
                     }
                 %>
             </div>
@@ -166,7 +166,7 @@
             <div>
                 <%
                     if(errores != null && errores.containsKey("habilitar")){
-                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 6px'>"+errores.get("habilitar")+ "</div>");
+                        out.print("<div style= 'color:#ec2c22; text-align: center; margin-top: 7px'>"+errores.get("habilitar")+ "</div>");
                     }
                 %>
             </div>
